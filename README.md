@@ -50,7 +50,7 @@ https://rowzend.github.io/
 Langkah:
 
 1. Buka <https://search.google.com/search-console/> dengan akun Google yang
-   sama dengan pemilik project Google Cloud **947126970670**.
+   sama dengan pemilik project Google Cloud Catatan Fleksibel.
 2. Tambahkan property **URL prefix** `https://rowzend.github.io/`.
 3. Pilih metode verifikasi **HTML tag** atau **HTML file**.
    - **HTML tag:** salin meta tag dari Search Console ke dalam `<head>` file
