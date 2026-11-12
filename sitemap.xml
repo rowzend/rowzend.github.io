@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://rowzend.github.io/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://rowzend.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rowzend.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rowzend.github.io/"/>
+  </url>
+  <url>
+    <loc>https://rowzend.github.io/privacy/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://rowzend.github.io/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rowzend.github.io/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rowzend.github.io/privacy/"/>
+  </url>
+  <url>
+    <loc>https://rowzend.github.io/terms/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://rowzend.github.io/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rowzend.github.io/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rowzend.github.io/terms/"/>
+  </url>
+  <url>
+    <loc>https://rowzend.github.io/en/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://rowzend.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rowzend.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rowzend.github.io/"/>
+  </url>
+  <url>
+    <loc>https://rowzend.github.io/en/privacy/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://rowzend.github.io/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rowzend.github.io/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rowzend.github.io/privacy/"/>
+  </url>
+  <url>
+    <loc>https://rowzend.github.io/en/terms/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="id" href="https://rowzend.github.io/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rowzend.github.io/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rowzend.github.io/terms/"/>
+  </url>
+</urlset>

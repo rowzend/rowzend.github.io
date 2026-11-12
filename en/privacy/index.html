@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Catatan Fleksibel</title>
+  <meta name="description" content="Catatan Fleksibel privacy policy: local data, optional Google Sheets sync, drive.file scope, and no analytics.">
+  <link rel="canonical" href="https://rowzend.github.io/en/privacy/">
+  <link rel="alternate" hreflang="id" href="https://rowzend.github.io/privacy/">
+  <link rel="alternate" hreflang="en" href="https://rowzend.github.io/en/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://rowzend.github.io/privacy/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Catatan Fleksibel">
+  <meta property="og:title" content="Privacy Policy — Catatan Fleksibel">
+  <meta property="og:description" content="How Catatan Fleksibel handles local data and optional Google Sheets sync.">
+  <meta property="og:url" content="https://rowzend.github.io/en/privacy/">
+  <meta property="og:image" content="https://rowzend.github.io/assets/og-image.png">
+  <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#081917" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/en/" aria-label="Catatan Fleksibel — home">
+        <img src="/assets/favicon.png" alt="" width="36" height="36">
+        <span>Catatan Fleksibel</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/en/#features">Features</a>
+        <a href="/en/#privacy">Privacy</a>
+        <a href="/en/#sync">Sync</a>
+        <a href="/en/privacy/" aria-current="page">Privacy policy</a>
+        <a href="/en/terms/">Terms</a>
+        <a class="nav-cta" href="/privacy/" lang="id" hreflang="id">Bahasa Indonesia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap legal-hero">
+      <p class="eyebrow">Legal</p>
+      <h1>Catatan Fleksibel Privacy Policy</h1>
+      <p class="legal-meta">Last updated: 12 November 2026</p>
+      <a class="back-link" href="/en/">← Back to home</a>
+    </div>
+
+    <article class="wrap legal">
+      <div class="summary">
+        <p><strong>In short:</strong> Catatan Fleksibel is a local-first app. We do not run an app server, use analytics, show ads, or sell data. Your notes are stored on your device. If you enable sync, your data is copied to your own Google Drive spreadsheet.</p>
+      </div>
+
+      <p>This policy explains how the <strong>Catatan Fleksibel</strong> application (“the app”, “we”) processes information when you use it on Android, Linux, or Windows, and when you visit <a href="https://rowzend.github.io/">rowzend.github.io</a>. By using the app, you agree to the practices described here.</p>
+
+      <h2>1. Who is responsible</h2>
+      <p>Catatan Fleksibel is developed by the independent <strong>rowzend</strong> project. For privacy questions, use the contact channel at the end of this policy.</p>
+
+      <h2>2. Data we process</h2>
+
+      <h3>2.1 Note data</h3>
+      <p>When you use the app, the following data is created and stored on your device:</p>
+      <ul>
+        <li>Note titles, note bodies, and checklist items.</li>
+        <li>Labels, colours, pin status, archive status, and Trash status.</li>
+        <li>Reminders: time, time zone, repeat rule, and completion status.</li>
+        <li>Technical metadata needed to keep data consistent, such as note IDs, created/updated timestamps, and a device marker used for sync.</li>
+      </ul>
+      <p>This is your data. We do not have access to it unless you explicitly send it to us, for example when reporting a bug.</p>
+
+      <h3>2.2 Google account data (only if you connect an account)</h3>
+      <p>Sync is optional. If you tap <strong>Connect Google</strong>, the app requests access to Google Drive with the scope <code>https://www.googleapis.com/auth/drive.file</code>. From Google, the app receives:</p>
+      <ul>
+        <li>Your account email address and display name, so the app can show which account is connected.</li>
+        <li>Access to files created or opened by the app in Drive, limited to what the <code>drive.file</code> scope allows.</li>
+      </ul>
+      <p>Your email and display name are shown during the app session. They are not stored as part of the notes database. A simple “has connected before” preference is stored locally so the app knows whether to offer sync on launch.</p>
+
+      <h3>2.3 Tokens and credentials</h3>
+      <p>Google access tokens are not written to the notes database and are not placed in the spreadsheet. On Android, tokens are managed by Google Sign-In. On desktop versions that support sync, tokens are stored in the operating system's secure storage (for example, Secret Service/libsecret on Linux and Credential Manager on Windows). The app does not store tokens in plaintext.</p>
+
+      <h3>2.4 Diagnostic data (optional)</h3>
+      <p>If the version of the app you use offers crash reporting, that feature is <strong>off by default</strong> and only activates after you opt in. Crash reports may contain technical information such as a stack trace, app version, operating system version, and device model. Before sending, note content, labels, email addresses, and tokens are scrubbed. The app does not send usage analytics, does not track keystrokes, and does not read note content for advertising.</p>
+
+      <h3>2.5 Website data</h3>
+      <p>This site is a static site hosted on GitHub Pages. It sets no cookies, loads no analytics, and runs no tracking scripts. GitHub, as the hosting provider, may process technical logs (such as IP address and user agent) under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+
+      <h2>3. Local storage</h2>
+      <p>The main database is stored in the app's private data directory on your device. The app does not apply application-level encryption to that database; protection depends on the app sandbox, disk encryption, and your device lock. If your device is shared, enable a screen lock and consider full-device encryption.</p>
+
+      <h2 id="google">4. Google Drive and Sheets sync</h2>
+      <p>Sync only runs after you connect a Google account and grant permission. When sync is active:</p>
+      <ul>
+        <li>The app looks for a spreadsheet named <strong>Catatan Fleksibel - Data</strong> in your Drive, and creates one if it does not exist.</li>
+        <li>The app writes to and reads from spreadsheet tabs for notes, checklists, labels, label links, and reminders.</li>
+        <li>Data moves directly between your device and Google Drive. We do not operate an intermediary server and do not receive a copy of that data.</li>
+        <li>Google processes the data under the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a> and Google Drive terms.</li>
+      </ul>
+      <p>You can disconnect the account at any time in Settings, revoke the app's access at <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">myaccount.google.com/permissions</a>, and delete the spreadsheet directly from Google Drive.</p>
+
+      <div class="callout">
+        <h3>Google API Services User Data Policy</h3>
+        <p>Catatan Fleksibel's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements. Google data is not used for advertising, is not sold, and is not shared with third parties except as necessary to provide the sync feature you requested.</p>
+      </div>
+
+      <h2>5. Sharing data</h2>
+      <p>We do not sell, rent, or trade your data. Data may be shared only in these cases:</p>
+      <ul>
+        <li><strong>With Google</strong>, if you enable sync. This is necessary for the app to write to and read from your Drive spreadsheet.</li>
+        <li><strong>With a crash-reporting provider</strong>, only if you opt in to that optional feature.</li>
+        <li><strong>When required by law</strong>, or to protect the rights, safety, and integrity of users.</li>
+        <li><strong>At your request</strong>, for example when you send a bug report containing specific information.</li>
+      </ul>
+
+      <h2>6. Security</h2>
+      <p>We aim to protect data by limiting Google scopes, using HTTPS for Google APIs, not writing tokens to the database, and using secure storage for desktop tokens. However, no system is completely secure. You are also responsible for keeping your device, Google account, and spreadsheet files secure.</p>
+
+      <h2>7. Retention and deletion</h2>
+      <ul>
+        <li><strong>Local data</strong> remains until you delete notes, empty Trash, clear app data, or uninstall the app.</li>
+        <li><strong>The Drive spreadsheet</strong> remains until you delete it yourself from Google Drive. Disconnecting the account in the app does not delete the spreadsheet.</li>
+        <li><strong>Crash reports</strong>, if enabled, are retained by the provider under their retention policy. You can request deletion through the contact channel below.</li>
+      </ul>
+
+      <h2>8. Your rights and choices</h2>
+      <ul>
+        <li>Use the core features without a Google account.</li>
+        <li>Decline or revoke Google access at any time.</li>
+        <li>Access, correct, and delete notes directly in the app.</li>
+        <li>Delete the spreadsheet from Google Drive.</li>
+        <li>Disable crash reporting if that feature is available.</li>
+      </ul>
+
+      <h2>9. Children</h2>
+      <p>The app is not directed to children under 13. We do not knowingly collect personal data from children. If you become aware of such data, contact us so it can be addressed.</p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>This policy may be updated if features, service providers, or legal requirements change. The “last updated” date at the top of this page shows the latest version. Material changes will be described on this page.</p>
+
+      <h2>11. Contact</h2>
+      <p>For privacy questions or requests, open <a href="https://github.com/rowzend/rowzend.github.io/issues" rel="noopener noreferrer">GitHub Issues</a>. Please do not include private note content, tokens, or email addresses in a public issue. If you need to discuss sensitive data, write a short request without details and we will point you to a more private channel.</p>
+      <p class="note">This document is a product privacy policy, not legal advice. If you need legal certainty for your jurisdiction, consult a professional.</p>
+
+      <a class="back-link" href="/en/">← Back to home</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/en/" aria-label="Catatan Fleksibel — home">
+            <img src="/assets/favicon.png" alt="" width="36" height="36">
+            <span>Catatan Fleksibel</span>
+          </a>
+          <p>Local-first notes, checklists, and reminders. Your data stays on your device; Google Sheets sync is optional.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Product</h2>
+          <ul>
+            <li><a href="/en/#features">Features</a></li>
+            <li><a href="/en/#privacy">Privacy</a></li>
+            <li><a href="/en/#sync">Sync</a></li>
+            <li><a href="/en/#platform-title">Platforms</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="/en/privacy/">Privacy policy</a></li>
+            <li><a href="/en/terms/">Terms of service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>More</h2>
+          <ul>
+            <li><a href="/privacy/" lang="id" hreflang="id">Bahasa Indonesia</a></li>
+            <li><a href="https://github.com/rowzend/rowzend.github.io" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://github.com/rowzend/rowzend.github.io/issues" rel="noopener noreferrer">Report a bug</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Catatan Fleksibel. Built with Flutter.</p>
+        <p>This site uses no cookies, analytics, or advertising.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

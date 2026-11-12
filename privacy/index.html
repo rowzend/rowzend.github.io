@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kebijakan Privasi — Catatan Fleksibel</title>
+  <meta name="description" content="Kebijakan privasi Catatan Fleksibel: data lokal, sinkronisasi Google Sheets opsional, scope drive.file, dan tidak ada analytics.">
+  <link rel="canonical" href="https://rowzend.github.io/privacy/">
+  <link rel="alternate" hreflang="id" href="https://rowzend.github.io/privacy/">
+  <link rel="alternate" hreflang="en" href="https://rowzend.github.io/en/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://rowzend.github.io/privacy/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Catatan Fleksibel">
+  <meta property="og:title" content="Kebijakan Privasi — Catatan Fleksibel">
+  <meta property="og:description" content="Bagaimana Catatan Fleksibel memproses data lokal dan sinkronisasi Google Sheets opsional.">
+  <meta property="og:url" content="https://rowzend.github.io/privacy/">
+  <meta property="og:image" content="https://rowzend.github.io/assets/og-image.png">
+  <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#081917" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Catatan Fleksibel — beranda">
+        <img src="/assets/favicon.png" alt="" width="36" height="36">
+        <span>Catatan Fleksibel</span>
+      </a>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <a href="/#fitur">Fitur</a>
+        <a href="/#privasi">Privasi</a>
+        <a href="/#sinkronisasi">Sinkronisasi</a>
+        <a href="/privacy/" aria-current="page">Kebijakan privasi</a>
+        <a href="/terms/">Syarat</a>
+        <a class="nav-cta" href="/en/privacy/" lang="en" hreflang="en">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap legal-hero">
+      <p class="eyebrow">Legal</p>
+      <h1>Kebijakan Privasi Catatan Fleksibel</h1>
+      <p class="legal-meta">Terakhir diperbarui: 12 November 2026</p>
+      <a class="back-link" href="/">← Kembali ke beranda</a>
+    </div>
+
+    <article class="wrap legal">
+      <div class="summary">
+        <p><strong>Singkatnya:</strong> Catatan Fleksibel adalah aplikasi local-first. Kami tidak menjalankan server aplikasi, tidak memakai analytics, tidak menampilkan iklan, dan tidak menjual data. Catatanmu disimpan di perangkatmu. Jika kamu mengaktifkan sinkronisasi, data disalin ke spreadsheet Google Drive milikmu sendiri.</p>
+      </div>
+
+      <p>Kebijakan ini menjelaskan bagaimana aplikasi <strong>Catatan Fleksibel</strong> (“aplikasi”, “kami”) memproses informasi saat kamu memakai aplikasi Android, Linux, atau Windows, serta situs <a href="https://rowzend.github.io/">rowzend.github.io</a>. Dengan memakai aplikasi, kamu menyetujui praktik yang dijelaskan di sini.</p>
+
+      <h2>1. Siapa yang bertanggung jawab</h2>
+      <p>Catatan Fleksibel dikembangkan oleh proyek independen <strong>rowzend</strong>. Untuk pertanyaan privasi, gunakan kanal kontak di bagian akhir kebijakan ini.</p>
+
+      <h2>2. Data yang diproses</h2>
+
+      <h3>2.1 Data catatan</h3>
+      <p>Saat kamu memakai aplikasi, data berikut dibuat dan disimpan di perangkatmu:</p>
+      <ul>
+        <li>Judul, isi catatan, dan item checklist.</li>
+        <li>Label, warna, status pin, status arsip, dan status Sampah.</li>
+        <li>Pengingat: waktu, zona waktu, aturan pengulangan, dan status selesai.</li>
+        <li>Metadata teknis yang diperlukan agar data tetap konsisten, seperti ID catatan, waktu dibuat/diubah, dan penanda perangkat untuk sinkronisasi.</li>
+      </ul>
+      <p>Data ini adalah data utamamu. Kami tidak memiliki akses ke data tersebut kecuali kamu secara eksplisit mengirimkannya kepada kami, misalnya saat melaporkan bug.</p>
+
+      <h3>2.2 Data akun Google (hanya jika kamu menghubungkan akun)</h3>
+      <p>Sinkronisasi bersifat opsional. Jika kamu menekan <strong>Hubungkan Google</strong>, aplikasi meminta izin untuk mengakses Google Drive dengan scope <code>https://www.googleapis.com/auth/drive.file</code>. Dari Google, aplikasi menerima:</p>
+      <ul>
+        <li>Alamat email dan nama tampilan akun, untuk menampilkan akun yang sedang terhubung.</li>
+        <li>Akses ke file yang dibuat atau dibuka oleh aplikasi di Drive, sebatas yang diizinkan scope <code>drive.file</code>.</li>
+      </ul>
+      <p>Email dan nama tampilan ditampilkan selama sesi aplikasi. Aplikasi tidak menyimpannya sebagai bagian dari database catatan. Status “pernah terhubung” disimpan sebagai preferensi lokal sederhana agar aplikasi tahu apakah sync perlu ditawarkan saat dibuka.</p>
+
+      <h3>2.3 Token dan kredensial</h3>
+      <p>Token akses Google tidak ditulis ke database catatan dan tidak dimasukkan ke spreadsheet. Di Android, token dikelola oleh Google Sign-In. Pada versi desktop yang mendukung sinkronisasi, token disimpan di secure storage sistem operasi (misalnya Secret Service/libsecret di Linux dan Credential Manager di Windows). Aplikasi tidak menyimpan token dalam bentuk plaintext.</p>
+
+      <h3>2.4 Data diagnostik (opsional)</h3>
+      <p>Jika versi aplikasi yang kamu pakai menyediakan pelaporan crash, fitur tersebut <strong>nonaktif secara default</strong> dan hanya aktif setelah kamu memilih untuk mengaktifkannya. Laporan crash dapat berisi informasi teknis seperti stack trace, versi aplikasi, versi sistem operasi, dan model perangkat. Sebelum dikirim, konten catatan, label, alamat email, dan token disaring. Aplikasi tidak mengirim analytics penggunaan, tidak melacak aktivitas mengetik, dan tidak membaca isi catatan untuk keperluan iklan.</p>
+
+      <h3>2.5 Data situs web</h3>
+      <p>Situs ini adalah halaman statis yang dihosting di GitHub Pages. Situs tidak memasang cookie, tidak memuat analytics, dan tidak menjalankan script pelacak. GitHub sebagai penyedia hosting dapat memproses log teknis (seperti alamat IP dan user agent) sesuai <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">Kebijakan Privasi GitHub</a>.</p>
+
+      <h2>3. Penyimpanan lokal</h2>
+      <p>Database utama disimpan di direktori data privat aplikasi di perangkat. Aplikasi tidak memakai enkripsi tingkat aplikasi untuk database tersebut; perlindungannya mengikuti sandbox aplikasi, enkripsi disk, dan kunci layar perangkat. Jika perangkatmu dipakai bersama, aktifkan kunci layar dan pertimbangkan enkripsi perangkat.</p>
+
+      <h2 id="google">4. Sinkronisasi Google Drive dan Sheets</h2>
+      <p>Sinkronisasi hanya berjalan setelah kamu menghubungkan akun Google dan memberikan izin. Saat sync aktif:</p>
+      <ul>
+        <li>Aplikasi mencari spreadsheet bernama <strong>Catatan Fleksibel - Data</strong> di Drive-mu, atau membuatnya jika belum ada.</li>
+        <li>Aplikasi menulis dan membaca tab spreadsheet untuk catatan, checklist, label, relasi label, dan pengingat.</li>
+        <li>Data berpindah langsung antara perangkatmu dan Google Drive. Kami tidak memiliki server perantara dan tidak menerima salinan data tersebut.</li>
+        <li>Google memproses data sesuai <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Kebijakan Privasi Google</a> dan syarat layanan Google Drive.</li>
+      </ul>
+      <p>Kamu dapat memutuskan akun kapan saja di Pengaturan, mencabut izin aplikasi di <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">myaccount.google.com/permissions</a>, dan menghapus spreadsheet langsung dari Google Drive.</p>
+
+      <div class="callout">
+        <h3>Google API Services User Data Policy</h3>
+        <p>Penggunaan dan transfer oleh Catatan Fleksibel atas informasi yang diterima dari Google API akan mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">Google API Services User Data Policy</a>, termasuk persyaratan Limited Use. Data Google tidak digunakan untuk iklan, tidak dijual, dan tidak dibagikan kepada pihak ketiga selain yang diperlukan untuk menyediakan fitur sinkronisasi yang kamu minta.</p>
+      </div>
+
+      <h2>5. Berbagi data</h2>
+      <p>Kami tidak menjual, menyewakan, atau memperdagangkan datamu. Data hanya dapat dibagikan dalam keadaan berikut:</p>
+      <ul>
+        <li><strong>Kepada Google</strong>, jika kamu mengaktifkan sinkronisasi. Ini diperlukan agar aplikasi dapat menulis dan membaca spreadsheet di Drive-mu.</li>
+        <li><strong>Kepada penyedia pelaporan crash</strong>, hanya jika kamu mengaktifkan fitur opsional tersebut.</li>
+        <li><strong>Jika diwajibkan hukum</strong>, atau untuk melindungi hak, keamanan, dan integritas pengguna.</li>
+        <li><strong>Atas permintaanmu</strong>, misalnya saat kamu mengirim laporan bug yang berisi informasi tertentu.</li>
+      </ul>
+
+      <h2>6. Keamanan</h2>
+      <p>Kami berupaya menjaga data dengan membatasi scope Google, menggunakan koneksi HTTPS untuk API Google, tidak menulis token ke database, dan memakai secure storage untuk token di desktop. Namun, tidak ada sistem yang sepenuhnya aman. Kamu juga bertanggung jawab menjaga keamanan perangkat, akun Google, dan file spreadsheet milikmu.</p>
+
+      <h2>7. Retensi dan penghapusan</h2>
+      <ul>
+        <li><strong>Data lokal</strong> tetap ada sampai kamu menghapus catatan, mengosongkan Sampah, menghapus data aplikasi, atau melakukan uninstall.</li>
+        <li><strong>Spreadsheet di Drive</strong> tetap ada sampai kamu menghapusnya sendiri dari Google Drive. Memutuskan akun di aplikasi tidak menghapus spreadsheet.</li>
+        <li><strong>Laporan crash</strong>, jika diaktifkan, disimpan oleh penyedia sesuai kebijakan retensi mereka. Kamu dapat meminta penghapusan melalui kanal kontak di bawah.</li>
+      </ul>
+
+      <h2>8. Hak dan pilihanmu</h2>
+      <ul>
+        <li>Memakai fitur inti tanpa akun Google.</li>
+        <li>Menolak atau mencabut izin Google kapan saja.</li>
+        <li>Mengakses, mengoreksi, dan menghapus catatan langsung dari aplikasi.</li>
+        <li>Menghapus spreadsheet dari Google Drive.</li>
+        <li>Menonaktifkan pelaporan crash jika fitur itu tersedia.</li>
+      </ul>
+
+      <h2>9. Anak-anak</h2>
+      <p>Aplikasi tidak ditujukan untuk anak di bawah 13 tahun. Kami tidak dengan sengaja mengumpulkan data pribadi dari anak-anak. Jika kamu mengetahui adanya data seperti itu, hubungi kami agar dapat ditindaklanjuti.</p>
+
+      <h2>10. Perubahan kebijakan</h2>
+      <p>Kebijakan ini dapat diperbarui jika fitur, penyedia layanan, atau persyaratan hukum berubah. Tanggal “terakhir diperbarui” di bagian atas halaman akan menunjukkan versi terbaru. Perubahan material akan dijelaskan di halaman ini.</p>
+
+      <h2>11. Kontak</h2>
+      <p>Untuk pertanyaan atau permintaan terkait privasi, buka <a href="https://github.com/rowzend/rowzend.github.io/issues" rel="noopener noreferrer">GitHub Issues</a>. Jangan menyertakan isi catatan pribadi, token, atau alamat email di issue publik. Jika perlu membahas data sensitif, tulis permintaan singkat tanpa detail dan kami akan mengarahkan ke kanal yang lebih privat.</p>
+      <p class="note">Dokumen ini adalah kebijakan privasi produk, bukan nasihat hukum. Jika kamu memerlukan kepastian hukum untuk yurisdiksimu, konsultasikan dengan profesional.</p>
+
+      <a class="back-link" href="/">← Kembali ke beranda</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Catatan Fleksibel — beranda">
+            <img src="/assets/favicon.png" alt="" width="36" height="36">
+            <span>Catatan Fleksibel</span>
+          </a>
+          <p>Catatan, checklist, dan pengingat local-first. Data tetap di perangkatmu; sinkronisasi Google Sheets opsional.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Produk</h2>
+          <ul>
+            <li><a href="/#fitur">Fitur</a></li>
+            <li><a href="/#privasi">Privasi</a></li>
+            <li><a href="/#sinkronisasi">Sinkronisasi</a></li>
+            <li><a href="/#platform-title">Platform</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="/privacy/">Kebijakan privasi</a></li>
+            <li><a href="/terms/">Syarat layanan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Lainnya</h2>
+          <ul>
+            <li><a href="/en/privacy/" lang="en" hreflang="en">English</a></li>
+            <li><a href="https://github.com/rowzend/rowzend.github.io" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://github.com/rowzend/rowzend.github.io/issues" rel="noopener noreferrer">Laporkan bug</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Catatan Fleksibel. Dibuat dengan Flutter.</p>
+        <p>Situs ini tidak memakai cookie, analytics, atau iklan.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
